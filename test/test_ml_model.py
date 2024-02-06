@@ -4,8 +4,8 @@ import pandas as pd
 
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
-from starter.ml.data import process_data, load_data, categorical_features
-from starter.ml.model import inference
+from starter.starter.ml.data import process_data, load_data, categorical_features
+from starter.starter.ml.model import inference
 
 DATA_PATH = r"data/census.csv"
 MODEL_PATH = r"model/"
