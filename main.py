@@ -1,13 +1,14 @@
 import pandas as pd
 import numpy as np
 import joblib
+import os
 
 from fastapi import FastAPI
 from model import InputData
 from starter.starter.ml.model import inference
 from starter.starter.ml.data import process_data, categorical_features
 
-MODEL_FOLDER_PATH = "/Users/aykhanam/Desktop/Deploying-a-ML-Model-to-Cloud-Application-Platform-with-FastAPI/starter/model/"
+MODEL_FOLDER_PATH = os.getcwd() + "/starter/model/"
 
 # Create Fast API app
 app = FastAPI()
