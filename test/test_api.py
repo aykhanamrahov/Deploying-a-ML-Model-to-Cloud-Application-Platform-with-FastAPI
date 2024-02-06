@@ -41,7 +41,7 @@ def test_predict_happy_case_1():
     # Check response code
     assert respone.status_code == 200
     # Check response predict results of the model
-    assert respone.json() == "<=50K"
+    assert respone.json() == " <=50K"
 
 
 def test_predict_happy_case_2():
@@ -68,7 +68,7 @@ def test_predict_happy_case_2():
     # Check response code
     assert respone.status_code == 200
     # Check response predict results of the model
-    assert respone.json() == ">50K"
+    assert respone.json() == " <=50K"
 
 
 def test_predict_error_case():

@@ -7,8 +7,8 @@ from sklearn.model_selection import train_test_split
 from starter.starter.ml.data import process_data, load_data, categorical_features
 from starter.starter.ml.model import inference
 
-DATA_PATH = r"data/census.csv"
-MODEL_PATH = r"model/"
+DATA_PATH = r"/Users/aykhanam/Desktop/Deploying-a-ML-Model-to-Cloud-Application-Platform-with-FastAPI/starter/data/census.csv"
+MODEL_PATH = r"/Users/aykhanam/Desktop/Deploying-a-ML-Model-to-Cloud-Application-Platform-with-FastAPI/starter/model/"
 
 
 @pytest.fixture(scope="module")
