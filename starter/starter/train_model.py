@@ -4,6 +4,7 @@ from sklearn.model_selection import train_test_split
 from ml.data import process_data, load_data, slide_performance
 from ml.model import train_model, compute_model_metrics, inference
 import joblib
+import os
 categorical_features = [
     "workclass",
     "education",
@@ -14,8 +15,10 @@ categorical_features = [
     "sex",
     "native-country",
 ]
-DATA_PATH = "/Users/aykhanam/Desktop/Deploying-a-ML-Model-to-Cloud-Application-Platform-with-FastAPI/starter/data/census.csv"
-MODEL_SAVE = "/Users/aykhanam/Desktop/Deploying-a-ML-Model-to-Cloud-Application-Platform-with-FastAPI/starter/model/"
+dir = os.getcwd()
+
+DATA_PATH = dir + "/starter/data/census.csv"
+MODEL_PATH = dir + "/starter/model/"
 
 # Add code to load in the data.
 print("Load dataset")
